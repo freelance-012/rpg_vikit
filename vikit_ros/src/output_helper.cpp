@@ -36,7 +36,7 @@ publishPointMarker(ros::Publisher pub,
                    ros::Duration lifetime)
 {
   visualization_msgs::Marker msg;
-  msg.header.frame_id = "/world";
+  msg.header.frame_id = "world";
   msg.header.stamp = timestamp;
   msg.ns = ns;
   msg.id = id;
@@ -69,7 +69,7 @@ publishLineMarker(ros::Publisher pub,
                   ros::Duration lifetime)
 {
   visualization_msgs::Marker msg;
-  msg.header.frame_id = "/world";
+  msg.header.frame_id = "world";
   msg.header.stamp = timestamp;
   msg.ns = ns;
   msg.id = id;
@@ -105,7 +105,7 @@ publishArrowMarker(ros::Publisher pub,
                    const Vector3d& color)
 {
   visualization_msgs::Marker msg;
-  msg.header.frame_id = "/world";
+  msg.header.frame_id = "world";
   msg.header.stamp = timestamp;
   msg.ns = ns;
   msg.id = id;
@@ -346,7 +346,7 @@ void publishFrameMarker(ros::Publisher pub,
                         ros::Duration lifetime)
 {
   visualization_msgs::Marker marker;
-  marker.header.frame_id = "/world";
+  marker.header.frame_id = "world";
   marker.header.stamp = timestamp;
   marker.ns = ns;
   marker.id = id++;
